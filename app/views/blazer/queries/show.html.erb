@@ -10,6 +10,7 @@
         </h3>
       </div>
       <div class="col-sm-3 text-right">
+      <h1> TRy from show queries </h1>
         <%= link_to "Edit", edit_query_path(@query, variable_params(@query)), class: "btn btn-default", disabled: !@query.editable?(blazer_user) %>
         <%= link_to "Fork", new_query_path(variable_params(@query).merge(fork_query_id: @query.id, data_source: @query.data_source, name: @query.name)), class: "btn btn-info" %>
 
